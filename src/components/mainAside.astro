@@ -1,0 +1,84 @@
+<div
+    class="w-[300px] h-[100%]"
+    style="background-image: radial-gradient(circle at 50% 120.71%, #d7c35d 0, #deba54 8.33%, #e4b04d 16.67%, #e9a546 25%, #ed9841 33.33%, #f0893e 41.67%, #f2793c 50%, #f3673d 58.33%, #f35542 66.67%, #f34249 75%, #f22b52 83.33%, #f0065d 91.67%, #ec0069 100%);"
+>
+    <div class="flex items-center logoContainer relative">
+        <img src="https://astro.js.org/astro.png" class="bg-transparent max-w-[100px]" alt="">
+        <p class="text-slate-50 text-2xl font-bold">Naspdir</p>
+    </div>
+
+    <ul class="font-sans" style="color:#ffffffCC">
+        <li class="active">
+            <a>
+                <div class="py-2 flex items-center gap-2 ps-5">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        class="bi bi-house-door-fill"
+                        viewBox="0 0 16 16"
+                    >
+                        <path
+                            d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"
+                        ></path>
+                    </svg>
+                     Home
+                </div>
+            </a>
+        </li>
+        <li>
+            <a>
+                <div class="py-2 flex items-center gap-2 ps-5">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        class="bi bi-book-fill"
+                        viewBox="0 0 16 16"
+                    >
+                        <path
+                            d="M8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"
+                        ></path>
+                    </svg>
+                     Mis libros
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+<style>
+    ul {
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    ul > li {
+        gap: 5px;
+        cursor: pointer;
+    }
+    ul > li.active {
+        font-weight: bold;
+        color: #fff;
+    }
+    ul > li:hover {
+        color: #fff;
+        font-weight: bolder;
+    }
+    .logoContainer::after{
+        content: "";
+        display: block;
+        width: 80%;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+
+        bottom: -6px;
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%);
+
+    }
+</style>

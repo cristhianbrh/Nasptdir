@@ -1,0 +1,14 @@
+---
+interface Props{
+    nameUser:string,
+    imgUrl:string,
+    idUser:number
+}
+
+const {nameUser, idUser, imgUrl} = Astro.props
+
+---
+<nav class="bg-yellow-50 flex-1 flex items-center justify-end pe-5 py-1 gap-3">
+    <p>{nameUser}</p>
+    <img src={imgUrl} alt="" class="inline h-[100%]">
+</nav>
